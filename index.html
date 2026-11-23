@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmad Sabiq Mubarok — Supply Chain & Sustainable Agribusiness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigasi Atas -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Ahmad Sabiq Mubarok</a>
+      <nav class="nav-links">
+        <a href="#tentang" data-i18n="nav_about">Tentang</a>
+        <a href="#studi-kasus" data-i18n="nav_cases">Studi Kasus</a>
+        <a href="#tulisan" data-i18n="nav_writing">Tulisan</a>
+        <a href="#kontak" class="btn-nav" data-i18n="nav_contact">Kontak</a>
+
+        <!-- Sakelar Bahasa ID / EN -->
+        <div class="lang-switch" role="group" aria-label="Language Switcher">
+          <button id="btn-id" class="lang-btn active" onclick="setLanguage('id')">ID</button>
+          <span class="lang-divider">|</span>
+          <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge" data-i18n="hero_badge">Supply Chain Management & Sustainable Agribusiness</span>
+        <h1 data-i18n="hero_title">Membangun Rantai Pasok Pertanian yang Inklusif, Efisien, dan Berkelanjutan.</h1>
+        <p class="hero-desc" data-i18n="hero_desc">
+          Peneliti dan praktisi rantai nilai agribisnis dengan fokus pada model bisnis inklusif,
+          korporatisasi petani, ekonomi sirkular, dan optimalisasi distribusi pangan B2B.
+        </p>
+        <div class="hero-actions">
+          <a href="#studi-kasus" class="btn-primary" data-i18n="hero_btn_cases">Lihat Studi Kasus</a>
+          <a href="https://www.linkedin.com/in/ahmadsabiqmubarok" target="_blank" rel="noopener" class="btn-secondary" data-i18n="hero_btn_linkedin">
+            Profil LinkedIn ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img src="assets/profile.jpg" alt="Foto Profil Ahmad Sabiq Mubarok" class="hero-photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian Tentang & Pilar Keahlian -->
+  <section id="tentang" class="section bg-light">
+    <div class="container">
+      <div class="about-header">
+        <span class="section-label" data-i18n="about_label">Tentang Saya</span>
+        <h2 class="section-title" data-i18n="about_title">Menjembatani Riset Rantai Nilai dan Praktik Agribisnis di Lapangan.</h2>
+        <p class="about-bio" data-i18n="about_bio">
+          Saya mendalami bagaimana rantai pasok pangan dan pertanian dapat dirancang lebih adil, tangguh, dan minim susut. Melalui kombinasi riset empiris, analisis kelembagaan petani, dan perancangan distribusi B2B, website ini menjadi ruang untuk mendokumentasikan studi kasus sekaligus berbagi catatan pemikiran seputar dinamika rantai pasok dan agribisnis berkelanjutan.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="pillar-card">
+          <div class="pillar-number">01</div>
+          <h3 data-i18n="pillar1_title">Supply Chain & B2B Distribution</h3>
+          <p data-i18n="pillar1_desc">
+            Analisis efisiensi logistik hulu-hilir, agregasi pasokan komoditas pangan, serta pengurangan susut pascapanen (food loss) melalui integrasi pasar B2B.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">02</div>
+          <h3 data-i18n="pillar2_title">Inclusive Business & Farmer Corporatization</h3>
+          <p data-i18n="pillar2_desc">
+            Penguatan kelembagaan koperasi dan korporatisasi petani untuk meningkatkan daya tawar, standar kualitas, dan kepastian serapan pasar modern.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">03</div>
+          <h3 data-i18n="pillar3_title">Sustainable & Circular Agribusiness</h3>
+          <p data-i18n="pillar3_desc">
+            Penerapan prinsip ekonomi sirkular, pertanian regeneratif, dan tata kelola rantai nilai yang selaras dengan keberlanjutan lingkungan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian Studi Kasus & Riset -->
+  <section id="studi-kasus" class="section">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-label" data-i18n="cases_label">Portofolio & Riset</span>
+          <h2 class="section-title" data-i18n="cases_title">Studi Kasus Terpilih</h2>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <article class="project-card" onclick="openReader('case1')">
+          <div class="project-tag" data-i18n="case1_tag">Riset Tesis & Value Chain</div>
+          <h3 data-i18n="case1_title">Model Bisnis Inklusif & Korporatisasi Petani: Koperasi Citra Kinaraya & PT TMT</h3>
+          <p data-i18n="case1_summary">
+            Analisis struktur kelembagaan hibrida antara koperasi dan perseroan terbatas dalam mengintegrasikan petani padi ke rantai pasok PT Food Station Tjipinang Jaya.
+          </p>
+          <div class="card-footer-link">
+            <span class="project-meta">Agribusiness Value Chain • Link Methodology</span>
+            <span class="read-more" data-i18n="read_case">Baca Ringkasan →</span>
+          </div>
+        </article>
+
+        <article class="project-card" onclick="openReader('case2')">
+          <div class="project-tag" data-i18n="case2_tag">B2B Supply Chain Design</div>
+          <h3 data-i18n="case2_title">Model Agregasi & Distribusi Surplus Hortikultura Koridor Magelang–Jawa Tengah</h3>
+          <p data-i18n="case2_summary">
+            Perancangan skema penyerapan surplus komoditas cabai, tomat, dan kentang dari tingkat pengepul ke pasar B2B regional guna menekan susut panen dan fluktuasi harga.
+          </p>
+          <div class="card-footer-link">
+            <span class="project-meta">B2B Logistics • Food Loss Reduction</span>
+            <span class="read-more" data-i18n="read_case">Baca Ringkasan →</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian Ruang Tulisan / Esai -->
+  <section id="tulisan" class="section bg-light">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-label" data-i18n="writing_label">Pemikiran & Esai</span>
+          <h2 class="section-title" data-i18n="writing_title">Tulisan Terbaru</h2>
+        </div>
+        <!-- Filter Kategori -->
+        <div class="filter-group">
+          <button class="filter-btn active" onclick="filterArticles('all', this)" data-i18n="filter_all">Semua</button>
+          <button class="filter-btn" onclick="filterArticles('supply-chain', this)">Supply Chain</button>
+          <button class="filter-btn" onclick="filterArticles('agribusiness', this)">Agribusiness</button>
+        </div>
+      </div>
+
+      <div id="article-list" class="article-list">
+        <!-- Daftar artikel akan dirender otomatis oleh script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Kontak -->
+  <footer id="kontak" class="footer">
+    <div class="container footer-content">
+      <div>
+        <h3 data-i18n="footer_title">Mari Terhubung & Berdiskusi</h3>
+        <p data-i18n="footer_desc">
+          Terbuka untuk diskusi seputar Supply Chain Management, riset rantai nilai pertanian, kolaborasi proyek, maupun pertukaran gagasan.
+        </p>
+      </div>
+      <div class="footer-actions">
+        <a href="https://www.linkedin.com/in/ahmadsabiqmubarok" target="_blank" rel="noopener" class="btn-primary">
+          LinkedIn ↗
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="btn-secondary">
+          GitHub ↗
+        </a>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>© 2026 Ahmad Sabiq Mubarok. <span data-i18n="footer_note">Dibangun secara mandiri dengan HTML, CSS & JavaScript.</span></p>
+    </div>
+  </footer>
+
+  <!-- Jendela Baca Artikel / Studi Kasus (Modal Reader) -->
+  <div id="reader-modal" class="modal-overlay" onclick="closeReaderOnBackdrop(event)">
+    <div class="modal-box">
+      <div class="modal-top-bar">
+        <span id="modal-category" class="badge">Kategori</span>
+        <button class="modal-close" onclick="closeReader()" aria-label="Tutup">✕</button>
+      </div>
+      <h2 id="modal-title" class="modal-title">Judul Tulisan</h2>
+      <div id="modal-meta" class="modal-meta">Tanggal • Waktu Baca</div>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
